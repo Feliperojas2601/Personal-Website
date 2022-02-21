@@ -365,21 +365,21 @@ img {
 }
 
 .skills__ang {
-    width: 90%;
+    width: 100%;
 }
 
-.skills__rea,
+.skills__plsql,
 .skills__js {
-    width: 70%;
+    width: 90%;
 }
 
 .skills__jx,
 .skills__sql {
-    width: 75%;
+    width: 85%;
 }
 
 .skills__py {
-    width: 65%;
+    width: 70%;
 }
 
 .skills__img {
