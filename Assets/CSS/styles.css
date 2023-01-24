@@ -1,8 +1,8 @@
-/*===== GOOGLE FONTS =====*/
+/*===== Google font =====*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-/*===== VARIABLES CSS =====*/
+/*===== CSS variables =====*/
 
 :root {
     --header-height: 3rem;
@@ -13,12 +13,12 @@
 /*===== Colores =====*/
 
 :root {
-    --first-color: #be31d1;
-    --second-color: #47035c;
+    --first-color: #7A9BF5;
+    --second-color: #2B52BA;
 }
 
 
-/*===== Fuente y tipografia =====*/
+/*===== Font and typography =====*/
 
 :root {
     --body-font: 'Poppins', sans-serif;
@@ -36,7 +36,7 @@
 }
 
 
-/*===== Margenes =====*/
+/*===== Margin =====*/
 
 :root {
     --mb-1: 0.5rem;
@@ -48,7 +48,7 @@
 }
 
 
-/*===== z index =====*/
+/*===== Z index =====*/
 
 :root {
     --z-back: -10;
@@ -58,7 +58,7 @@
 }
 
 
-/*===== BASE =====*/
+/*===== Base =====*/
 
 *,
 ::before,
@@ -100,7 +100,7 @@ img {
 }
 
 
-/*===== CLASS CSS ===== */
+/*===== CSS Classes ===== */
 
 .section-title {
     position: relative;
@@ -129,7 +129,7 @@ img {
 }
 
 
-/*===== LAYOUT =====*/
+/*===== Layout =====*/
 
 .bd-grid {
     max-width: 1024px;
@@ -152,7 +152,7 @@ img {
 }
 
 
-/*===== NAV =====*/
+/*===== Nav =====*/
 
 .nav {
     height: var(--header-height);
@@ -208,9 +208,6 @@ img {
     cursor: pointer;
 }
 
-
-/*Active menu*/
-
 .active::after {
     position: absolute;
     content: "";
@@ -221,15 +218,11 @@ img {
     background-color: var(--first-color);
 }
 
-
-/*=== Show menu ===*/
-
 .show {
     right: 0;
 }
 
-
-/*===== HOME =====*/
+/*===== Home =====*/
 
 .home {
     height: calc(100vh - 3rem);
@@ -271,9 +264,6 @@ img {
     bottom: 0;
 }
 
-
-/*BUTTONS*/
-
 .button {
     display: inline-block;
     background-color: var(--first-color);
@@ -287,8 +277,7 @@ img {
     box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
 }
 
-
-/* ===== ABOUT =====*/
+/* ===== About =====*/
 
 .about__container {
     row-gap: 2rem;
@@ -308,8 +297,7 @@ img {
     border-radius: .5rem;
 }
 
-
-/* ===== SKILLS =====*/
+/* ===== Skills =====*/
 
 .skills__container {
     row-gap: 2rem;
@@ -328,6 +316,9 @@ img {
 }
 
 .skills__text {
+    text-align: left;
+    margin-left: var(--mb-6);
+    margin-right: var(--mb-6);
     margin-bottom: var(--mb-2);
 }
 
@@ -354,40 +345,38 @@ img {
     align-items: center;
 }
 
-.skills__bar {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: var(--first-color);
-    height: .25rem;
-    border-radius: .5rem;
-    z-index: var(--z-back);
-}
-
-.skills__ang {
-    width: 100%;
-}
-
-.skills__plsql,
-.skills__js {
-    width: 90%;
-}
-
-.skills__jx,
-.skills__sql {
-    width: 85%;
-}
-
-.skills__py {
-    width: 70%;
-}
-
 .skills__img {
     border-radius: .5rem;
 }
 
+/* ===== Study =====*/
 
-/* ===== WORK =====*/
+.study__container {
+    row-gap: 2rem;
+}
+
+.study__img {
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+    border-radius: .5rem;
+    overflow: hidden;
+    align-content: center;
+}
+
+.study__img img {
+    transition: 1s;
+    cursor: pointer;
+}
+
+.study__img img:hover {
+    transform: scale(1.1);
+}
+
+.study__text {
+    text-align: center;
+    margin: var(--mb-2);
+}
+
+/* ===== Work =====*/
 
 .work__container {
     row-gap: 2rem;
@@ -414,8 +403,11 @@ img {
     margin: var(--mb-2);
 }
 
+/* ===== Contact =====*/
 
-/* ===== CONTACT =====*/
+.contact__container {
+    row-gap: 2rem;
+}
 
 .contact__input {
     width: 100%;
@@ -437,8 +429,7 @@ img {
     margin-left: auto;
 }
 
-
-/* ===== FOOTER =====*/
+/* ===== Footer =====*/
 
 .footer {
     background-color: var(--second-color);
@@ -463,8 +454,7 @@ img {
     margin: 0 var(--mb-2)
 }
 
-
-/* ===== MEDIA QUERIES=====*/
+/* ===== Media responsive =====*/
 
 @media screen and (min-width: 768px) {
     body {
